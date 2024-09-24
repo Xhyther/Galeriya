@@ -4,8 +4,9 @@
     {
         public int Id { get; set; }
         public String? ProfilePicture { get; set; }
-        public string UserName { get; set; }
-        public string Email { get; set; }
+        public String UserName { get; set; }
+        public String Bio {  get; set; }
+        public String Email { get; set; }
         public DateTime JoinDate { get; set; }
 
     }
