@@ -16,7 +16,7 @@ namespace Galeriya.Controllers
         //Get Posts
         public async Task<IActionResult> Index()
         {
-            return View(//Probably need something here later on);
+            return View();//Probably need something here later on
         }
 
     }
