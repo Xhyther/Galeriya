@@ -37,6 +37,12 @@ namespace Galeriya.Controllers
         {
             return View(); //returns the view of input form
         }
+
+        [HttpPost] //For Creating
+        public async Task<IActionResult> Create(Post post)
+        {
+            
+        }
         
         
         
