@@ -62,7 +62,7 @@ namespace Galeriya.Controllers
             return View(post);
         }
 
-        [HttpPut]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("PostTitle, ImgUrl, UploadPost")] Post post)
         {
@@ -106,7 +106,7 @@ namespace Galeriya.Controllers
         }
 
             
-        [HttpDelete, ActionName("Delete")]
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeletePost(int? id)
         {
